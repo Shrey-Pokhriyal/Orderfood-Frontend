@@ -1,0 +1,387 @@
+/* css reset */
+*
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+/* @media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){ */
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+body{
+overflow-x: hidden;
+margin: 0px;
+width: 100%;
+height: 100%;
+padding: 0px;
+}
+#navbar
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0px;
+    /* justify-content:space-evenly */
+}
+/* nac ul */
+#navbar ul
+{
+display: flex;
+}
+#navbar ul li
+{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+    margin-left: 20px;
+    text-decoration: none;
+    color:black;
+    display: block;
+    padding: 2px 40px;
+    transition-property: all;
+    transition-duration: 0.5s;
+  
+}
+#navbar ul li a:hover{
+    color:red;
+}
+#navbar::before
+{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+/*nav logo styling */
+#logo
+{
+    align-items: flex-start;
+    width: 10vw;
+    background-color: black;
+    border-radius: 700px;
+    margin-left: 1vw;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+
+#home
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+#home h1
+{
+   padding: 3vh;
+   margin-top: 12vh;
+   margin-left: 6vw;
+   font-size: 2.5rem;
+   font-family: 'Otomanopee One', sans-serif;
+}
+#home p
+{
+  margin-left: 8vw;
+  width:33vw;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: medium;
+  padding-top: 1vh;
+}
+#btn
+{
+    padding: 7px;
+    margin-left:111px;
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+    background-color:  rgb(83, 223, 125);
+    padding: 15px;
+    border-radius: 70px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    font-family: 'Otomanopee One', sans-serif;
+    cursor: pointer;
+    /* opacity: 0.8; */
+}
+#btn:hover
+{
+    background-color: rgb(74, 167, 74);
+    box-shadow: 0 12px 16px 0 rgba(24, 221, 57, 0.774), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#home::before
+{
+    content: "";
+    background: url('../img/bg1.PNG') no-repeat center center/cover;
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 0.8;
+}
+p#biggerpara
+{
+    font-size:large;
+}
+#service-container h1
+{
+    /* margin-top: 1vh; */
+   text-align: center;
+    font-size: 1.9rem;
+    font-family: 'Otomanopee One', sans-serif;
+}
+#service-container
+{
+    /* display: flex; */
+    /* border: 2px solid rgb(37, 20, 20); */
+    /* margin-top: 9vh; */
+    justify-content: center;
+    padding-top: 11px;
+    background-color: rgb(22, 145, 59);
+    height: 56vh;
+}
+.boxes
+{
+    margin-top: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid brown; */
+    justify-content: space-around;
+}
+.box
+{
+    /* border: 2px solid black; */
+    width: 20vw;
+    height: 42;
+    flex-wrap: wrap;
+    box-shadow: 7px 0px 7px 0px grey;
+    background-color: #fff788;
+    border-radius: 20px;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.box:hover{
+    box-shadow: 7px 7px 7px 7px rgb(44, 21, 21);
+    background-color: #f5e835;
+}
+.img-service
+{
+    /* border: 2px solid red; */
+    height: 30vh;
+}
+.img-service img
+{
+    width:20vw;
+    height: 30vh;
+    border-radius: 20px 20px 0px 0px;
+}
+.box p
+{
+    text-align: center;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: small;
+}
+.box h2
+{
+    text-align: center;
+    font-family: 'Otomanopee One', sans-serif;
+    margin-top: 0.3vh;
+    font-size: large;
+}
+.clients
+{
+    /* border: 2px solid red; */
+    height: 55vh;
+    /* margin-top: 1vh; */
+    /* background: url('../img/client.jpg') no-repeat center center/cover;
+    opacity: 0.9; */
+}
+.clients::before{
+    content: "";
+    position: absolute;
+    background: url('../img/client.jpg') no-repeat center center/cover;
+    opacity: 0.9;
+    z-index: -1;
+    height: 55vh;
+    width: 100%;
+}
+.clients h1
+{
+    padding-top: 2vh;
+   font-size: 1.9rem;
+   text-align: center;
+   font-family: 'Otomanopee One', sans-serif;
+}
+.logo
+{
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    height: 51vh;
+}
+.lo{
+    /* border: 2px solid green; */
+    width: 20vw;
+}
+
+#l
+{
+/* border: 2px solid blue; */
+width: 20vw;
+height: 30vh;
+
+}
+.lo img
+{
+    width: 20vw;
+    height: 40vh;
+}
+#lo2
+{
+ width:15vw;
+ height: 30vh;   
+ margin: 36px;
+ margin-top: 50px;
+ border-radius: 16px;
+}
+#lo3
+{
+    margin: 23px;
+    width: 17vw;
+    height: 30vh;
+    margin-top: 50px;
+}
+#lo4
+{
+    width:15vw;
+    height: 30vh;   
+    margin: 36px;
+    margin-top: 50px;
+    border-radius: 16px;
+}
+footer
+{
+    /* margin-top: 3vh; */
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+@media only screen and (max-width:1030px) and (min-width:915px)
+{
+.box p
+{
+    font-size: x-small;
+}
+   #home h1
+   {
+       font-size: 2rem;
+   }
+   #navbar ul li a{
+    margin-left: 10px;
+    text-decoration: none;
+    color:black;
+    display: block;
+    padding: 2px 20px;
+    transition-property: all;
+    transition-duration: 0.5s;
+  
+}
+}
+@media only screen and (max-width:915px) and (min-width:685px)
+{
+    #navbar ul li a{
+        align-self: center;
+        /* margin-left: 10px; */
+        text-decoration: none;
+        color:black;
+        display: block;
+        padding: 2px 10px;
+        transition-property: all;
+        transition-duration: 0.5s;
+        
+    }
+    #navbar ul
+    {
+        align-self: center;
+    }
+    #home h1
+    {
+        margin-left: 3vw;
+        font-size: 1.5rem;
+    }
+    #home p
+    {
+        /* margin-left: 8vw;
+        width:33vw;
+        font-family: 'Yanone Kaffeesatz', sans-serif; */
+        font-size: small;
+        margin-left: 5vw;
+        /* padding-top: 1vh; */
+    }
+    .box p
+    {
+        font-size: x-small;
+    }
+    .box h2
+    {
+        font-size: medium;
+    }
+}
+@media only screen and (max-width:685px) and (min-width:0px)
+{
+    #navbar
+    {
+        flex-direction: column;
+        background-color: #fff899;
+     
+    }
+    #navbar::before{
+        opacity: 1;
+    }
+    #home h1
+    {
+        font-size: 1.5rem;
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 7vh;
+    }
+    #home p
+    {
+        font-size: small;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    #btn
+    {
+        margin-left: 0;
+    }
+    #home
+    {
+        justify-content: center;
+        align-items: center;
+    }
+    #logo
+    {
+        width:15vw;
+    }
+    .boxes
+    {
+       flex-wrap: wrap;
+    }
+}
